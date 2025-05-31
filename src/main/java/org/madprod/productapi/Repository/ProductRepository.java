@@ -10,6 +10,8 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     // No additional code is needed here as JpaRepository provides all necessary methods
 
 
+
+
     // Test
     List<Product> findByNameContainingIgnoreCase(String name);
 }
