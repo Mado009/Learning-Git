@@ -30,10 +30,12 @@ public class ProductController {
         productService.updateProduct(id, product);
         return "Product updated successfully!";
     }
-    
     @PostMapping("/delete/{id}")
     public String deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
         return "Product deleted successfully!";
     }
+    
+    
+    //testing
 }
