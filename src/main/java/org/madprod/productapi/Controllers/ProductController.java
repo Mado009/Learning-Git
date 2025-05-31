@@ -23,17 +23,28 @@ public class ProductController {
         productService.createProduct(product);
         return "Product created successfully!";
     }
-    
+
+
+
     //Update and Delete methods can be added similarly
     @PostMapping("/update/{id}")
     public String updateProduct(@PathVariable Long id, @RequestBody Product product) {
         productService.updateProduct(id, product);
         return "Product updated successfully!";
     }
-    
+
+
+
     @PostMapping("/delete/{id}")
     public String deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
         return "Product deleted successfully!";
     }
+
+
+
+
+
+
+
 }
