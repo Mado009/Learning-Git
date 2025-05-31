@@ -14,7 +14,15 @@ public class Product {
     private String description;
     private double price;
     private String category;
+    private String color;
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 
     public Long getId() {
         return id;
