@@ -14,7 +14,7 @@ public class Product {
     private String description;
     private double price;
     private String category;
-    private String color;
+    private String color; //AA
 
     public String getColor() {
         return color;
